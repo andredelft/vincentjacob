@@ -1,0 +1,20 @@
+.footer {
+  position: relative;
+  z-index: 5;
+  min-height: 300px;
+  background-color: $spruce;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  img {
+    height: 250px;
+  }
+  font-size: 100px;
+  svg {
+    margin-left: 50px;
+    position: relative;
+    top: 20px;
+  }
+}

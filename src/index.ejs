@@ -5,10 +5,33 @@
     <title>Vincent Jacob</title>
   </head>
   <body>
-    <div class="container">
-      <div class="main slideup">
-        <img src="<%= require('./images/vincent-jacob-white.png') %>" class="name" width="550">
-        <img src="<%= require('./images/profile.jpeg') %>" width="350" class="profile">
+    <div class="parallax background">
+      <div style="height: 870vh"></div>
+      <div class="footer">
+        <img src="<%= require('./images/vincent-jacob.png') %>">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-spotify"></i>
+      </div>
+      <div class="parallax__layer parallax__layer--base load-hidden slideup">
+        <img src="<%= require('./images/vj-forest.jpeg') %>" id="imgForest">
+      </div>
+      <div class="parallax__layer parallax__layer--back load-hidden slideup">
+        <img src="<%= require('./images/vincent-jacob.png') %>" id="txtName">
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <img src="<%= require('./images/path.jpeg') %>" id="imgPath">
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <img src="<%= require('./images/i-dont-know.png') %>" id="txtIDontKnow">
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <img src="<%= require('./images/promise-me.png') %>" id="txtPromiseMe">
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <img src="<%= require('./images/sheep.jpeg') %>" id="imgSheep">
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <img src="<%= require('./images/profile.jpeg') %>" id="imgProfile">
       </div>
     </div>
   </body>
