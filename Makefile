@@ -6,7 +6,7 @@ build:
 	docker build -t $(IMAGE_TAG) .
 
 run:
-	docker run --name $(CONTAINER_NAME) -p $(HOST_PORT):8000 --detach $(IMAGE_TAG)
+	docker run --name $(CONTAINER_NAME) -p $(HOST_PORT):80 --detach $(IMAGE_TAG)
 
 update:
 	make build
