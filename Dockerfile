@@ -1,2 +1,6 @@
+FROM node:current-alpine
+COPY . ./
+RUN npm install && npm run build
+
 FROM nginx:alpine
-COPY /dist /usr/share/nginx/html
+COPY --from=0 static/dist /usr/share/nginx/html
