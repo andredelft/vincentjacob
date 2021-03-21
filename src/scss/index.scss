@@ -1,0 +1,22 @@
+@import 'colors';
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .main {
+    margin: auto;
+    vertical-align: center;
+    .name {
+      margin-right: 150px;
+    }
+  }
+}
