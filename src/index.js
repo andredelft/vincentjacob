@@ -8,7 +8,10 @@ var slideUp = {
   delay: 200,
   duration: 1500,
   distance: '40%',
-  origin: 'bottom'
+  origin: 'bottom',
+  afterReveal: function(el) {
+      ScrollReveal().destroy();
+  }
 };
 
 ScrollReveal().reveal('.slideup', slideUp);
