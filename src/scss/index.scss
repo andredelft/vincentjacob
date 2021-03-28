@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'parallax';
+@import 'objects';
 
 body {
   margin: 0;
@@ -9,12 +10,40 @@ html.sr .load-hidden {
   visibility: hidden;
 }
 
+img {
+  display: block;
+}
+
 .background {
   width: 100vw;
   background: url('../images/background.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.spacer {
+  height: 100vh;
+  &.foot {
+    height: 20vh;
+  }
+
+  // Border class to show spacers
+  &.border {
+    border-bottom: 2px solid;
+    &.blue {
+      border-color: $sky;
+    }
+    &.green {
+      border-color: $spruce;
+    }
+    &.red {
+      border-color: $redbrown;
+    }
+    &.yellow {
+      border-color: $sand;
+    }
+  }
 }
 
 @import 'footer';

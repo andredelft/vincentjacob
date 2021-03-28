@@ -1,69 +1,35 @@
+$perspective: 1px;
+$back-layer-position: -1px;
+$scale: 0.5;//(#{$perspective} / (#{$perspective} + (-1 * #{$back-layer-position})));
+
 .parallax {
-  perspective: 1px;
+  perspective: $perspective;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
 }
 .parallax__layer {
-  width: 100%;
+  --container-width: 800px;
+  width: var(--container-width);
+  margin: auto;
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
 }
 .parallax__layer--base {
   transform: translateZ(0);
 }
 .parallax__layer--back {
-  transform: translateZ(-1px);
-}
-
-#txtName {
   position: relative;
-  width: 1000px;
-  left: 15vw;
-  top: 30vh;
+  --viewport-width: calc(var(--container-width) / #{$scale});
+  width: var(--viewport-width);
+  left: calc((100% - var(--viewport-width))/2);
+  transform: translateZ(#{$back-layer-position});
 }
-
-#imgForest {
+.parallax__object {
   position: relative;
-  left: 12vw;
-  width: 350px;
-  top: 15vh;
-}
-
-#txtIDontKnow {
-  position: relative;
-  width: 1000px;
-  left: 0;
-  top: 180vh;
-}
-
-#imgPath {
-  position: relative;
-  top: 180vh;
-  left: 40vw;
-  width: 500px;
-}
-
-#txtPromiseMe {
-  position: relative;
-  width: 1500px;
-  left: 20vw;
-  top: 370vh;
-}
-
-#imgSheep {
-  position: relative;
-  top: 500vh;
-  left: 10vw;
-  width: 500px;
-}
-
-#imgProfile {
-  position: relative;
-  top: 700vh;
-  width: 100%;
 }
