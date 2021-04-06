@@ -27,6 +27,9 @@ img {
 
 .spacer {
   height: 100vh;
+  &.min-height {
+    min-height: 670px;
+  }
   &.foot {
     height: 20vh;
   }

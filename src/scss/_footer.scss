@@ -1,5 +1,10 @@
+$footer-height: 220px;
+
 #Footer {
-  height: 220px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
   background-color: $spruce;
   display: flex;
   color: white;
@@ -8,14 +13,20 @@
   flex-wrap: wrap;
   img {
     height: 200px;
+    @include sm {
+      height: 150px;
+    }
   }
   font-size: 100px;
+  @include sm {
+    font-size: 50px;
+  }
   svg {
-    margin-left: 50px;
     position: relative;
     top: 20px;
+    margin-left: 50px;
+    @include sm {
+      margin-left: 15px;
+    }
   }
-  position: relative;
-  bottom: 0;
-  width: 100%
 }

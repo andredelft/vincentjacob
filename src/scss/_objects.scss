@@ -22,7 +22,8 @@ $promise-me-ratio: 0.823;
   align-self: flex-end;
   width: calc(700px / #{$scale});
   @include sm {
-    width: 100%;
+    align-self: center;
+    width: 95%;
   }
 }
 
@@ -37,7 +38,7 @@ $promise-me-ratio: 0.823;
 #txtIDontKnow {
   top: 25vh;
   align-self: center;
-  width: 650px;
+  width: 500px;
   @include sm {
     align-self: center;
     width: 80%;
