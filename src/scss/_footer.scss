@@ -10,11 +10,10 @@ $footer-height: 160px;
   color: white;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   img {
     height: 150px;
-    @include sm {
-      height: 150px;
+    @include xs {
+      height: 120px;
     }
   }
   font-size: 100px;
@@ -29,6 +28,9 @@ $footer-height: 160px;
     @include sm {
       margin-left: 20px;
       height: 65px;
+    }
+    @include xs {
+      height: 55px;
     }
   }
 }
