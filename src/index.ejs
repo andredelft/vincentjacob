@@ -5,39 +5,39 @@
     <title>Vincent Jacob</title>
   </head>
   <body>
-    <div class="parallax background">
-      <div class="parallax__layer parallax__layer--back">
-        <img src="<%= require('./images/vj-forest.jpeg') %>" id="imgForest" class="parallax__object load-hidden slideup">
+    <div class="parallax background" id="Scroller">
+      <div class="parallax-layer pl-back flex-row">
+        <img src="<%= require('./images/vj-forest.jpeg') %>" id="imgForest" class="pl-object load-hidden slideup">
       </div>
-      <div class="parallax__layer parallax__layer--base spacer">
-        <img src="<%= require('./images/vincent-jacob.png') %>" id="txtName" class=" parallax__object load-hidden slideup">
+      <div class="parallax-layer pl-base flex-row spacer">
+        <img src="<%= require('./images/vincent-jacob.png') %>" id="txtName" class="pl-object load-hidden slideup">
       </div>
       <div class="spacer"></div>
-      <div class="parallax__layer parallax__layer--back">
-        <img src="<%= require('./images/promise-me.png') %>" id="txtPromiseMe" class="parallax__object">
+      <div class="parallax-layer pl-back">
+        <img src="<%= require('./images/promise-me.png') %>" id="txtPromiseMe" class="pl-object">
       </div>
-      <div class="parallax__layer parallax__layer--base">
+      <div class="spacer"></div>
+      <div class="parallax-layer pl-base flex-row">
         <iframe src="https://www.youtube.com/embed/lPCv6IB-4lA"
-          title="YouTube video player" frameborder="0"
+          width="560" height="315" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-          class="parallax__object" id="vidPromiseMe" class="parallax__object"
+          class="pl-object" id="vidPromiseMe" class="pl-object"
         ></iframe>
       </div>
-      <!-- <div class="parallax__layer parallax__layer-\-base">
-        <img src="<%= require('./images/sheep.jpeg') %>" id="imgSheep">
-      </div> -->
       <div class="spacer"></div>
-      <div class="parallax__layer parallax__layer--base">
-        <img src="<%= require('./images/path.jpeg') %>" id="imgPath" class="parallax__object">
+      <div class="spacer small-collapse"></div>
+      <div class="parallax-layer pl-back">
+        <img src="<%= require('./images/path.jpeg') %>" id="imgPath" class="pl-object">
       </div>
-      <div class="parallax__layer parallax__layer--back">
-        <img src="<%= require('./images/i-dont-know.png') %>" id="txtIDontKnow" class="parallax__object">
+      <div class="parallax-layer pl-base">
+        <img src="<%= require('./images/i-dont-know.png') %>" id="txtIDontKnow" class="pl-object">
       </div>
       <div class="spacer"></div>
-      <div class="parallax__layer parallax__layer--back">
-        <img src="<%= require('./images/profile.jpeg') %>" id="imgProfile" class="parallax__object">
+      <div class="spacer"></div>
+      <div class="parallax-layer pl-back">
+        <img src="<%= require('./images/profile.jpeg') %>" id="imgProfile" class="pl-object">
       </div>
-      <div class="footer">
+      <div id="Footer">
         <img src="<%= require('./images/vincent-jacob.png') %>">
         <i class="fab fa-instagram"></i>
         <i class="fab fa-spotify"></i>

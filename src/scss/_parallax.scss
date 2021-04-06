@@ -9,7 +9,7 @@ $scale: 0.5;//(#{$perspective} / (#{$perspective} + (-1 * #{$back-layer-position
   overflow-x: hidden;
   overflow-y: auto;
 }
-.parallax__layer {
+.parallax-layer {
   --container-width: 800px;
   @include sm {
     --container-width: 90vw;
@@ -20,17 +20,21 @@ $scale: 0.5;//(#{$perspective} / (#{$perspective} + (-1 * #{$back-layer-position
   top: 0;
   height: 0;
   display: flex;
+  flex-direction: column;
+  &.flex-row {
+    flex-direction: row;
+  }
 }
-.parallax__layer--base {
+.pl-base {
   transform: translateZ(0);
 }
-.parallax__layer--back {
+.pl-back {
   position: relative;
   --viewport-width: calc(var(--container-width) / #{$scale});
   width: var(--viewport-width);
   left: calc((100% - var(--viewport-width))/2);
   transform: translateZ(#{$back-layer-position});
 }
-.parallax__object {
+.pl-object {
   position: relative;
 }

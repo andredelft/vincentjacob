@@ -14,37 +14,52 @@
   min-height: calc(300px / #{$scale});
 }
 
+$promise-me-ratio: 0.823;
+
 #txtPromiseMe {
   top: 0;
-  width: 1300px;
+  // height: calc(700px * #{$promise-me-ratio} / #{$scale});
+  align-self: flex-end;
+  width: calc(700px / #{$scale});
+  @include sm {
+    width: 100%;
+  }
 }
 
 #vidPromiseMe {
-  top: 300vh;
-  left: -100px;
-  width: 560pt;
-  height: 315pt;
+  align-self: flex-end;
+  top: 0;
+  @include sm {
+    align-self: center;
+  }
 }
 
 #txtIDontKnow {
-  width: 800px;
-  top: 20vh;
+  top: 25vh;
+  align-self: center;
+  width: 650px;
+  @include sm {
+    align-self: center;
+    width: 80%;
+  }
 }
 
 #imgPath {
+  top: -15vh;
   align-self: flex-end;
-  top: 450vh;
-  width: 500px;
+  width: calc(500px / #{$scale});
+  @include sm {
+    width: 60%;
+  }
 }
 
-#imgSheep {
-  top: 500vh;
-  left: 10vw;
-  width: 500px;
-}
+// #imgSheep {
+//   top: 500vh;
+//   left: 10vw;
+//   width: 500px;
+// }
 
 #imgProfile {
-  top: 80vh;
   width: 80%;
   align-self: center;
 }

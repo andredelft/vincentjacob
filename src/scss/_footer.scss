@@ -1,8 +1,5 @@
-.footer {
-  position: relative;
-  top: -20vh;
-  z-index: 5;
-  min-height: 300px;
+#Footer {
+  height: 220px;
   background-color: $spruce;
   display: flex;
   color: white;
@@ -10,7 +7,7 @@
   align-items: center;
   flex-wrap: wrap;
   img {
-    height: 250px;
+    height: 200px;
   }
   font-size: 100px;
   svg {
@@ -18,4 +15,7 @@
     position: relative;
     top: 20px;
   }
+  position: relative;
+  bottom: 0;
+  width: 100%
 }

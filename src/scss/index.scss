@@ -30,6 +30,11 @@ img {
   &.foot {
     height: 20vh;
   }
+  &.small-collapse {
+    @include sm {
+      height: 0px;
+    }
+  }
 
   // Border class to show spacers
   &.border {
