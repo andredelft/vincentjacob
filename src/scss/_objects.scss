@@ -1,19 +1,22 @@
 #txtName {
-  top: 30vh;
-  left: 100px;
-  width: 900px;
+  top: 0;
+  margin: auto;
   align-self: center;
+  width: 600px;
+  @include sm {
+    width: 80%;
+  }
 }
 
 #imgForest {
-  width: 350px;
-  top: 5vh;
+  top: calc((10vh - 25vh) / #{$scale});
+  height: calc(80vh / #{$scale});
+  min-height: calc(300px / #{$scale});
 }
 
 #txtPromiseMe {
-  width: 1300px;
   top: 0;
-  align-self: flex-end;
+  width: 1300px;
 }
 
 #vidPromiseMe {

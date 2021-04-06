@@ -1,6 +1,9 @@
+@import 'mixins';
 @import 'colors';
 @import 'parallax';
 @import 'objects';
+@import 'viewport';
+@import 'footer';
 
 body {
   margin: 0;
@@ -45,5 +48,3 @@ img {
     }
   }
 }
-
-@import 'footer';
