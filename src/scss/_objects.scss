@@ -37,17 +37,16 @@
   align-self: center;
   width: 500px;
   @include sm {
-    align-self: center;
-    width: 80%;
+    width: 100%;
   }
 }
 
 #imgPath {
   top: -15vh;
   align-self: flex-end;
-  width: calc(500px / #{$scale});
+  width: calc(450px / #{$scale});
   @include sm {
-    width: 60%;
+    width: 80%;
   }
 }
 
