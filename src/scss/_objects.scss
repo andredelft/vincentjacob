@@ -14,11 +14,8 @@
   min-height: calc(300px / #{$scale});
 }
 
-$promise-me-ratio: 0.823;
-
 #txtPromiseMe {
   top: 0;
-  // height: calc(700px * #{$promise-me-ratio} / #{$scale});
   align-self: flex-end;
   width: calc(700px / #{$scale});
   @include sm {

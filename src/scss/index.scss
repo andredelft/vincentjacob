@@ -27,14 +27,14 @@ img {
 
 .spacer {
   height: 100vh;
-  &.min-height {
-    min-height: 670px;
-  }
+  min-height: 670px;
   &.foot {
+    min-height: 20vh;
     height: 20vh;
   }
   &.small-collapse {
     @include sm {
+      min-height: 0;
       height: 0px;
     }
   }
