@@ -37,7 +37,8 @@
   align-self: center;
   width: 500px;
   @include sm {
-    width: 100%;
+    align-self: flex-start;
+    width: 70%;
   }
 }
 

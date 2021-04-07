@@ -1,6 +1,6 @@
 $perspective: 1px;
 $back-layer-position: -1px;
-$scale: 0.5;//(#{$perspective} / (#{$perspective} + (-1 * #{$back-layer-position})));
+$scale: 0.5;//($perspective / ($perspective - $back-layer-position)));
 
 .parallax {
   perspective: $perspective;
@@ -8,6 +8,7 @@ $scale: 0.5;//(#{$perspective} / (#{$perspective} + (-1 * #{$back-layer-position
   width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .parallax-layer {
   --container-width: 800px;

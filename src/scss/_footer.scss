@@ -10,6 +10,7 @@ $footer-height: 160px;
   color: white;
   justify-content: center;
   align-items: center;
+  z-index: 5;
   > img {
     height: 150px;
     @include xs {
