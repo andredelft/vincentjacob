@@ -11,13 +11,13 @@
 #imgForest {
   top: calc((10vh - 25vh) / #{$scale});
   height: calc(80vh / #{$scale});
-  min-height: calc(300px / #{$scale});
+  min-height: calc(500px / #{$scale});
 }
 
 #txtPromiseMe {
   top: 0;
   align-self: flex-end;
-  width: calc(700px / #{$scale});
+  max-width: calc(500px / #{$scale});
   @include sm {
     align-self: center;
     width: 95%;
@@ -60,4 +60,5 @@
 #imgProfile {
   width: 80%;
   align-self: center;
+  max-width: 1000px;
 }
