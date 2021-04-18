@@ -1,4 +1,4 @@
-$footer-height: 160px;
+$footer-height: 300px;
 
 #Footer {
   position: sticky;
@@ -6,15 +6,15 @@ $footer-height: 160px;
   top: calc(100vh - #{$footer-height});
   width: 100%;
   height: $footer-height;
-  background-color: $spruce;
+  // background-color: $spruce;
   display: flex;
   color: white;
   justify-content: center;
   align-items: center;
   > img {
-    height: 150px;
-    @include xs {
-      height: 120px;
+    height: 300px;
+    @include sm {
+      height: 200px;
     }
     padding-right: 5px;
   }

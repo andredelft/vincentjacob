@@ -1,6 +1,7 @@
 .sm-top {
   display: flex;
-  position: relative;
+  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   height: 0;

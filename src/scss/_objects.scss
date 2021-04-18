@@ -8,10 +8,15 @@
   }
 }
 
-#imgForest {
-  top: calc((10vh - 25vh) / #{$scale});
-  height: calc(80vh / #{$scale});
-  min-height: calc(500px / #{$scale});
+#imgRemember {
+  top: 0;
+  height: 500px;
+  @include sm {
+    height: 350px;
+  }
+  @include xs {
+    height: 250px;
+  }
 }
 
 #txtPromiseMe {
@@ -46,6 +51,7 @@
   top: -15vh;
   align-self: flex-end;
   width: calc(450px / #{$scale});
+  max-width: 1000px;
   @include sm {
     width: 80%;
   }
