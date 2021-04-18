@@ -13,7 +13,8 @@ module.exports = (env) => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      clean: true
+      clean: true,
+      assetModuleFilename: '[name].[contenthash][ext]'
     },
     devtool: 'inline-source-map',
     module: {
@@ -28,9 +29,9 @@ module.exports = (env) => {
           ]
         },
         {
-          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          test: /\.(png|svg|jpg|jpeg|gif|xml|webmanifest)$/i,
           type: 'asset/resource',
-        },
+        }
       ]
     },
     plugins: [
@@ -40,7 +41,7 @@ module.exports = (env) => {
       }),
       new CopyPlugin({
         patterns: [
-          { from: "src/images/*", to: "[contenthash][ext]" },
+          { from: "src/favicon/*", to: "[name][ext]" },
         ],
       }),
     ]
