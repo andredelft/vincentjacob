@@ -41,6 +41,7 @@ module.exports = (env) => {
       }),
       new CopyPlugin({
         patterns: [
+          { from: "src/images/*", to: "[name].[contenthash][ext]" },
           { from: "src/favicon/*", to: "[name][ext]" },
         ],
       }),
