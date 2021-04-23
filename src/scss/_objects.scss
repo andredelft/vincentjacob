@@ -57,11 +57,48 @@
   }
 }
 
-// #imgSheep {
-//   top: 500vh;
-//   left: 10vw;
-//   width: 500px;
-// }
+#txtCarryYou {
+  top: 0;
+  align-self: flex-start;
+  width: 750px;
+  @include sm {
+    width: 100%;
+  }
+}
+
+#imgDreamy {
+  top: -25vh;
+  align-self: flex-end;
+  width: calc(500px / #{$scale});
+  @include sm {
+    align-self: center;
+    width: 80%;
+  }
+}
+
+#txtWwwbSketch {
+  top: 50vh;
+  align-self: center;
+  width: 100%;
+}
+
+#imgHouse {
+  top: 0;
+  align-self: flex-end;
+  width: 600px;
+  @include sm {
+    width: 80%;
+  }
+}
+
+#imgLighthouse {
+  top: 0;
+  align-self: flex-start;
+  width: 450px;
+  @include sm {
+    width: 80%;
+  }
+}
 
 #imgProfile {
   width: 80%;
