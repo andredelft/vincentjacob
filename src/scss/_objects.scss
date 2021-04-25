@@ -20,7 +20,7 @@
 }
 
 #txtPromiseMe {
-  top: 0;
+  top: 50vh;
   align-self: flex-end;
   max-width: calc(750px / #{$scale});
   @include sm {
@@ -85,7 +85,7 @@
 #imgHouse {
   top: 0;
   align-self: flex-end;
-  width: 600px;
+  width: 500px;
   @include sm {
     width: 80%;
   }

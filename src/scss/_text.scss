@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+.text-container {
+  max-width: 700px;
+  margin: auto;
+  @media (max-width: 750px) {
+    margin: 0 20px;
+  }
+  padding: 17px 25px;
+  background-color: transparentize($black, 0.5);
+  border-radius: 10px;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 25px;
+  @include sm {
+    font-size: 20px;
+  }
+  color: white;
+  p:first-of-type {
+    margin-top: 0;
+  }
+}
