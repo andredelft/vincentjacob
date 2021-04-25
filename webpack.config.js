@@ -11,7 +11,7 @@ module.exports = (env) => {
       index: './src/index.js'
     },
     output: {
-      filename: '[name].bundle.js',
+      filename: '[name].[contenthash].js',
       path: path.resolve(__dirname, 'dist'),
       clean: true,
       assetModuleFilename: '[name].[contenthash][ext]'
@@ -37,7 +37,7 @@ module.exports = (env) => {
     plugins: [
       new HtmlWebpackPlugin(),
       new MiniCssExtractPlugin({
-        filename: 'main.css'
+        filename: 'main.[contenthash].css'
       }),
       new CopyPlugin({
         patterns: [
