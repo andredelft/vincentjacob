@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
 
 .text-container {
   max-width: 700px;
@@ -9,7 +9,7 @@
   padding: 17px 25px;
   background-color: transparentize($black, 0.5);
   border-radius: 10px;
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'IM Fell English', serif;
   font-size: 23px;
   @include sm {
     font-size: 20px;
@@ -20,5 +20,14 @@
   }
   p:last-of-type {
     margin-bottom: 0;
+  }
+  a {
+    color: $sand;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    &:hover {
+      background-color: transparentize($sand, 0.8);
+    }
   }
 }
